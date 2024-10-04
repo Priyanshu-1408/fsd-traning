@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: white;
+        }
+        .parent {
+            border: 2px solid white;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+            justify-items: center;
+            align-items: center;
+            padding: 20px;
+            background-color: white; 
+        }
+        .Box {
+            border: 2px solid rgb(12, 12, 12);
+            background-color: rgb(23, 217, 194);
+            height: 300px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+        .Box h2, .Box p {
+            margin-bottom: 10px;
+        }
+        .Box button {
+            padding: 10px 20px;
+            background-color: green; 
+            color: white; 
+            border: none; 
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+        }
+        .Box button:hover {
+            background-color: #034e9e; 
+            height: 50px;
+            width: 100px;
+        }
+
+        .upper{
+            padding-bottom: 50px;
+            text-align: start;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="Box" id="Box-1">
+            <div class="upper"><h2>Basics</h2></div>
+            <p>
+                $10/month<br>
+                <p>
+                Feature 1<br></p>
+                Feature 2<br>
+            </p>
+            <button>Signup</button>
+        </div>
+        <div class="Box" id="Box-2">
+            <h2>Standard</h2>
+            <p>
+                $20/month<br>
+                <p>
+                Feature 1<br></p>
+                <p>
+                Feature 2<br></p>
+                <p>
+                Feature 3<br></p>
+            </p>
+            <button>Signup</button>
+        </div>
+        <div class="Box" id="Box-3">
+            <h2>Premium</h2>
+            <p>
+                $30/month<br>
+                <p>
+                Feature 1<br>
+                <p>
+                Feature 2<br></p>
+                <p>
+                Feature 3<br></p>
+                <p>
+                Feature 4<br></p>
+            </p>
+            <button>Signup</button>
+        </div>
+    </div>
+</body>
+</html>
