@@ -1,0 +1,12 @@
+.card{
+    width: 240px;
+    margin-left: 40px;
+    margin-bottom: 90px;
+}
+
+.movies12{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
